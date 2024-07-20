@@ -1,18 +1,5 @@
 var somaTotal = 0;
 
-
-/*
-<div class="produto">
-    <p>Macarrão</p>
-    <img src="./imagens/produtos/macarrao.jpg">
-    <p>Quantidade: <input class="qtd" type="number" value="0" min="0"></p>
-    <br>
-    <p>Preço(R$): <span class="preco">10,00</span></p>
-    <button class="btnCompra">Comprar</button>
-</div>
-
-*/
-
 function addProdutos() {
     let divCardapio = document.querySelector("#cardapio");
     let nomeProdutos = ["macarrao", "lasanha", "kare", "churrasco", 
@@ -64,7 +51,7 @@ function comprar() {
     let precoProdutos = document.querySelectorAll(".preco");
     let btnCompra = document.querySelectorAll(".btnCompra");
     let total = document.querySelector("p#total");
-    const som = new Audio("../sons/clickButtonComprar.mp3");
+    const som = new Audio("sons/clickButtonComprar.mp3");
     for(let i = 0; i < btnCompra.length; i++) {
         btnCompra[i].addEventListener("click", ()=> {
             let preco = parseFloat(precoProdutos[i].textContent.replace(",", "."));
