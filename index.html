@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Mundo dos Sabores</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <menu>
+            <ul>
+                <li><a href="#brevDesc">Home</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </menu>
+        <menu id="carrinho">
+            <div>
+            </div>
+            <div>
+                <p id="total">R$: 0,00</p>
+            </div>
+        </menu>
+    </header>
+    <main>
+        <div class="sessao" id="brevDesc">
+            <div>
+                <p>
+                    <strong>Bem-vindo ao Mundo dos Sabores</strong>
+                    <br><br>
+                    No coração da cidade, o Mundo dos Sabores é um destino gastronômico único que celebra a diversidade culinária global. Com uma equipe apaixonada pela arte da culinária e um ambiente acolhedor, oferecemos uma experiência gastronômica inigualável.
+                </p>
+            </div>
+            <div></div>
+        </div>
+        <div class="sessao"  id="cardapio">
+            <h2>
+                <p>Nossos produtos</p>
+            </h2>
+            <div id="produtos"></div>
+        </div>
+        <div class="sessao"  id="sobre">
+            <div>
+                <p>
+                    <strong>Quem Somos</strong><br>
+                    No Mundo dos Sabores, acreditamos que a comida é uma linguagem universal que une pessoas de todas as partes do mundo. Fundado por apaixonados pela culinária internacional, nosso restaurante tem a missão de proporcionar aos nossos clientes uma deliciosa aventura gastronômica, com pratos autênticos preparados com os ingredientes mais frescos e técnicas tradicionais.
+                </p>
+            </div>
+            <div></div>
+        </div>
+        <div class="sessao"  id="contato">
+            <div>
+                <h2>Entre em contato</h2>
+                <div id="formContato">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" placeholder="digite o seu nome" type="text">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input id="email" placeholder="digite o seu email" type="email">
+                    <br>
+                    <br>
+                    <span id="spanAlert"></span>
+                    <br><br>
+                    <label>Mensagem</label>
+                    <br>
+                    <textarea name="" id="mensagem" cols="30" rows="9" placeholder="Digite aqui sua mensagem"></textarea>
+                    <br><br>
+                    <button class="buttonClass" onclick="validarDados()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div></div>
+        <div>
+            <h1>Contato</h1>
+            <p><strong>Bairro:</strong> Jardim Sereno</p>
+            <p><strong>Rua:</strong> Rua dos Sabores</p>
+            <p><strong>Número:</strong> 456</p>
+            <p><strong>telefone:</strong> (-20) 3456-7890</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

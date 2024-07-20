@@ -1,0 +1,386 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+body {
+    background-image: url("../imagens/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+
+header {
+    background-image: url("../imagens/backgroundHeader.avif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: fixed;
+    margin-top: -250px;
+    margin-left: calc(100%/3.5);
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#carrinho {
+    border: 1px solid black;
+    width: 350px;
+    height: 70px;
+    position: fixed;
+    margin-left: 52vw;
+    margin-top: -90px;
+    background-image: url("../imagens/background-menu-cardapio.jpg");
+    background-size: contain;
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    z-index: 2;
+}
+
+
+#carrinho div {
+    display: block;
+    width: 100px;
+    position: absolute;
+    background-image: none;
+}
+
+#carrinho div:nth-of-type(1) {
+    background-image: url("../imagens/saco-de-dinheiro.png");
+    height: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#carrinho div:nth-of-type(2) {
+    margin-left: 100px;
+    margin-top: 23px;
+    width: 200px;
+    font-size: 30px;
+    color: rgb(5, 223, 5);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+p#total {
+    width: 300px;
+
+}
+
+#carrinho img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+
+menu {
+    height: 75px;
+}
+
+menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    width: 700px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+li {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    background-image: url("../imagens/menu.png");
+    background-size: 110%;
+    background-position: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.2s;
+}
+
+li a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+li:not(:hover) {
+    transition: 0.3s;
+}
+
+li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+}
+
+.sessao {
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: row;
+}
+
+.sessao:nth-of-type(1) {
+    margin-top: 250px;
+}
+
+.sessao div {
+    flex: 1;
+    height: 500px;
+    margin: auto;
+}
+
+#brevDesc div:nth-of-type(1) {
+    background-color: rgb(172, 169, 169);
+}
+
+#brevDesc div:nth-of-type(2) {
+    background-image: url("../imagens/brevDesc.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sobre div:nth-of-type(2) {
+    background-image: url("../imagens/brevDesc.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
+
+#sobre div:nth-of-type(1) {
+    background-color: rgb(172, 169, 169);
+}
+
+#sobre div {
+    height: 550px;
+}
+
+
+#contato h2 {
+    margin-top: -7px;
+    font-size: 25px;
+    letter-spacing: 0.8px;
+}
+
+#contato div:nth-of-type(2) {
+    background-image: url("../imagens/brevDesc.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contato div {
+    background-image: url("../imagens/backgroundContato.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    margin-top: 0px;
+}
+
+
+#brevDesc p:nth-of-type(1),
+#sobre p:nth-of-type(1),
+#contato p:nth-of-type(1) {
+    margin-top: 20px;
+    width: 600px;
+    font-size: 30px;
+    margin-left: 12.5%;
+    text-align: center;
+    line-height: 50px;
+}
+
+#cardapio {
+    margin-bottom: 200px;
+    height: 1600px;
+}
+
+#cardapio h2 {
+    background-image: url("../imagens/menuProdutos.jpg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    letter-spacing: 5px;
+}
+
+#cardapio h2 p {
+    margin-top: 5px;
+}
+
+.sessao:nth-of-type(2) {
+    flex-direction: column;
+}
+
+.sessao:nth-of-type(2) h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div#produtos {
+    display: flex;
+    padding-top: 30px;
+    background-image: url("../imagens/background-menu-cardapio.jpg");
+    width: 1000px;
+    height: 2000px;
+    flex-wrap: wrap; 
+    align-items: center;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+div.produto {
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 400px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.produto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.produto img:hover {
+    box-shadow: 5px 8px 8px black;
+    transition: 0.3s;
+}
+
+.produto img:not(:hover) {
+    transition: 0.5s;
+}
+
+.produto input {
+    width: 80px;
+}
+
+.produto p:nth-of-type(2) {
+    margin-top: 20px;
+}
+
+.buttonClass {
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.buttonClass:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttonClass:active {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+.produto button {
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(0, 155, 0);
+    color: white;
+    font-weight: bold;
+}
+
+#sobre div:nth-last-of-type(1) {
+    background-image: url("../imagens/comidas.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+#formContato {
+    background-image: none !important;
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+#formContato input {
+    padding-left: 5px;
+}
+
+#formContato #spanAlert {
+    display: none;
+}
+
+#formContato label:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+#formContato button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+#formContato textarea {
+    margin-top: 20px;
+    width: 301px;
+    height: 153px;
+}
+
+footer {
+    display: flex;
+    height: 350px;
+    background-color: rgba(0, 171, 63, 0.507);
+}
+
+footer div {
+    flex: 1;
+    font-size: 30px;
+}
+
+footer div:nth-of-type(1) {
+    background-image: url("../imagens/endereco2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer div:nth-of-type(2) p {
+    width: 400px;
+    margin: auto;
+}
+
+footer div:nth-of-type(2) h1 {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(0, 255, 128, 0.552);
+}
