@@ -22,7 +22,7 @@ function addProdutos() {
         produtos.innerHTML += `
         <div class="produto">
             <p>${String(nomeProdutos[i]).toUpperCase()}</p>
-            <img src="imagens/produtos/${nomeProdutos[i]}.jpg">
+            <img src="./imagens/produtos/${nomeProdutos[i]}.jpg">
             <p>Quantidade: <input class="qtd" type="number" value="0" min="0"></p>
             <br>
             <p>Preço(R$): <span class="preco">${String(precoProdutos[i].toFixed(2)).replace(".", ",")}</span></p>
