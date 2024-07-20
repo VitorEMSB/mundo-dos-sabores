@@ -22,7 +22,7 @@ function addProdutos() {
         produtos.innerHTML += `
         <div class="produto">
             <p>${String(nomeProdutos[i]).toUpperCase()}</p>
-            <img src="../imagens/produtos/${nomeProdutos[i]}.jpg">
+            <img src="imagens/produtos/${nomeProdutos[i]}.jpg">
             <p>Quantidade: <input class="qtd" type="number" value="0" min="0"></p>
             <br>
             <p>Preço(R$): <span class="preco">${String(precoProdutos[i].toFixed(2)).replace(".", ",")}</span></p>
@@ -51,7 +51,7 @@ function comprar() {
     let precoProdutos = document.querySelectorAll(".preco");
     let btnCompra = document.querySelectorAll(".btnCompra");
     let total = document.querySelector("p#total");
-    const som = new Audio("../sons/clickButtonComprar.mp3");
+    const som = new Audio("sons/clickButtonComprar.mp3");
     for(let i = 0; i < btnCompra.length; i++) {
         btnCompra[i].addEventListener("click", ()=> {
             let preco = parseFloat(precoProdutos[i].textContent.replace(",", "."));
